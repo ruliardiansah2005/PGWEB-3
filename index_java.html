@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+    <style>
+        body {
+            background-color: #a6ff00;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        #value_nama {
+            color: #000000;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    Nama: <i id="value_nama"></i>
+    <br>
+    Umur: <i id="value_umur"></i>
+    <br>
+    Tinggi: <i id="value_tinggi"></i>
+
+    <script>
+        var name = "Ruli Ardiansah";
+        let umur = 20;
+        let tinggi = 170;
+
+        // Array
+        let film_favorit = ["The Early Spring", "Inception", "Interstellar"];
+
+        //menampilkan ke jendela console.log
+        console.log("Nama saya adalah " + name + " saat ini umur saya " + umur + " dan tinggi saya " + tinggi + " cm" + " dan film favorit saya adalah " + film_favorit[0]);
+        console.log("Nama : " + name);
+        console.log("Umur : " + umur + " tahun");
+        console.log("Tinggi : " + tinggi + " cm");
+        console.log("Film Favorit : " + film_favorit[0]);
+
+        //Arithmetic Operators
+        let a = 7.8;
+        let b = 0.00009;
+        let c = a + b / b;
+
+        let jumlah = a + b;
+        console.log("Hasil dari " + a + " + " + b + " / " + b + " = " + c);
+        console.log("Jumlah dari " + a + " + " + b + " = " + jumlah);
+
+        let sisa = a % b;
+        console.log("Sisa dari " + a + " % " + b + " = " + sisa);
+
+        let pangkat = a ** b;
+        console.log("Hasil dari " + a + " pangkat " + b + " = " + pangkat);
+
+        let bagi = a / b;
+        console.log("Hasil dari " + a + " / " + b + " = " + bagi);
+
+        let kurang = a - b;
+        console.log("Hasil dari " + a + " - " + b + " = " + kurang);
+
+        //conditional statement
+        if (umur >= 18) {
+            console.log("Anda sudah dewasa");
+        } else if (umur >= 13 && umur < 18) {
+            console.log("Anda masih remaja");
+        } else if (umur >= 6 && umur < 13) {
+            console.log("Anda masih anak-anak");
+        } else {
+            console.log("Anda masih balita");
+        }
+
+        //looping statement
+        for (let i = 1; i <= 43; i++) {
+            console.log(i);
+        }
+
+        //function
+        function penjumlahan(a, b) {
+            return console.log("Hasil dari " + a + " + " + b + " = " + (a + b));
+        }
+
+        penjumlahan(5, 10.89);
+
+        //menampilkan halama ke jendela browser
+        document.getElementById("value_nama").innerHTML = name;
+        document.getElementById("value_umur").innerHTML = umur;
+        document.getElementById("value_tinggi").innerHTML = tinggi;
+    </script>
+</body>
+
+</html>
